@@ -108,7 +108,14 @@
             Controls.Add(checkBox1);
             Controls.Add(checkBox2);
             FormBorderStyle = FormBorderStyle.FixedSingle;
-            Icon = new Icon("TogglerIcon.ico"); //Icon must be in app's dir
+            try
+            {
+                Icon = new Icon("TogglerIcon.ico"); //Icon must be in app's dir
+            }
+            catch (FileNotFoundException)
+            {
+                Icon = null;
+            }
             MaximizeBox = false;
             Name = "Win";
             StartPosition = FormStartPosition.CenterScreen;
