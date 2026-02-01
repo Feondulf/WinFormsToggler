@@ -11,11 +11,13 @@
 	  <RuntimeIdentifier>win-x64</RuntimeIdentifier>
 	  <AnalysisLevel>6.0-all</AnalysisLevel>
 	  <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
-	  <ApplicationIcon>on-button.ico</ApplicationIcon>
+	  <ApplicationIcon>TogglerIcon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="on-button.ico" />
+    <Content Include="TogglerIcon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
